@@ -1,0 +1,6 @@
+.env
+.directory
+conf.d/
+LICENSE
+wp.sh
+wp-cli-test.sh

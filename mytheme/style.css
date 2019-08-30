@@ -1,0 +1,168 @@
+/*
+Theme Name: My Theme
+Theme URI: https://github.com/Simon-BEE/wptheme
+Author: Simon
+Author URI: https://github.com/Simon-BEE
+Description: My first WordPress' theme.
+Version: 1.0
+License: MIT
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: mytheme
+
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fafafa;
+    color: #23282d;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+a{
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #23282d;
+    text-decoration: underline;
+}
+
+#s{
+    margin: 0 0 10px 0;
+}
+
+p{
+    text-align: justify;
+    line-height: 25px;
+}
+
+h2, h3{
+    letter-spacing: 2px;
+}
+
+input[type='text']{
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button, input[type='submit']{
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background-color: #23282d;
+    color: #3498db;
+    padding: 10px;
+}
+
+button:hover, input[type='submit']:hover{
+    background-color: #3498db;
+    color: #23282d;
+}
+
+#header{
+    text-align: center;
+    padding: 50px 0;
+    background-color: #23282d;
+}
+
+#title{
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+#header nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+#header ul li{
+    display: inline-block;
+}
+
+#header nav ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#header nav ul li a:hover{
+    color: #fafafa;
+}
+
+#header nav ul li.current-menu-item a{
+    border-bottom: 2px solid #fafafa;
+}
+
+#header nav ul li.current-menu-item a:hover{
+    border-bottom: 2px solid #3498db;
+}
+
+#wrap{
+    display: flex;
+    margin: 0 auto;
+    padding: 2% 10%;
+}
+
+#loop article{
+    margin: 0 0 50px 0;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#sidebar{
+    padding: 0 0 0 50px;
+    flex: 0 0 350px;
+}
+
+#sidebar .widget{
+    padding: 20px;
+    margin: 0 0 20px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+#pagination{
+    text-align: center;
+    margin: 0 0 100px 0;
+}
+
+#footer{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #23282d;
+    color: #f1f1f1;
+}
+
+#footer.widget{
+    flex: 1;
+    padding: 0 40px;
+}
+
+@media screen and (max-width: 959px){
+    #wrap{
+        width: 100%;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    #sidebar{
+        padding: 0;
+    }
+
+    #footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
